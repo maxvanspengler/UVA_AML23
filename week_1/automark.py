@@ -140,10 +140,8 @@ def get_progress(username):
     completed_percentage = round(completed / len(data['progress']) * 100)
     
     print('| Current Assignment Grade {:2}%              |'.format(completed_percentage))
-    print('-'*45)
     for k, v in sorted(data['progress'].items()):
         print('| {:25}| {:15}|'.format(k, v))
-    print('-'*45)
 
 
 def test_student_function(username, function, arg_keys):
